@@ -1,5 +1,3 @@
-package chapter30;
-
 import java.util.concurrent.*;
 
 public class ParallelMax {
