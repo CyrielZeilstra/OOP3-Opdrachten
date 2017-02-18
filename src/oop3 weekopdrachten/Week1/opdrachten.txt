@@ -1,0 +1,28 @@
+30.1
+Rewrite Listing 30.1 to display the output in a text area, as shown in Figure 30.30.
+Create a TextArea and use appendText() to add text
+
+30.4
+(Synchronize threads) Write a program that launches 1,000 threads.
+Each thread adds 1 to a variable sum that initially is 0. Define an Integer wrapper object to hold sum.
+Run the program with and without synchronization to see its effect.
+You can use newFixedThreadPool() to create a fixed number of threads in the pool.
+
+30.6
+(Bouncing balls) Rewrite Listing 15.17 BallPane.java, using a thread to animate bouncing ball movements.
+You can find BallPane.java on Blackboard.
+All you have to do is add a thread and use Platform.runLater(Runnable)
+
+30.8
+(Account synchronization) Rewrite Listing 30.6, ThreadCooperation.java (see Blackboard),
+using the Account-object’s wait() and notifyAll() methods.
+Note : an object becomes a monitor once a thread locks it.
+
+30.15
+(Parallel sum) Implement the following method using Fork/Join to find the sum of a list:
+public static double parallelSum(double[] list)
+Write a test program that finds the sum in a list of 1000 double values.
+
+Note : this is quite similar to LISTING 30.11
+ParallelMax.java (see Blackboard). But now you create a
+private static class SumTask extends RecursiveTask<Double> {
