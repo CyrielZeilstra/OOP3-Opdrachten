@@ -8,20 +8,17 @@ import javafx.stage.Stage;
  * Created by arch on 2/13/17.
  */
 
-public class opgave1 extends Application {
+public class Main extends Application {
 
-    /**
-     * Created by arch on 2/15/17.
-     */
+    private static TextArea txtArea;
 
-    static TextArea txtArea;
-
-    public static synchronized void appendtxtArea(String s){
+    static synchronized void appendtxtArea(String s){
         txtArea.appendText(s);
     }
 
     @Override
     public void start(Stage stage) {
+
         txtArea = new TextArea();
         Scene scene = new Scene(new Group(txtArea));
 
@@ -53,8 +50,10 @@ public class opgave1 extends Application {
 
 
 // The task for printing a character a specified number of times    c
+
 class PrintChar implements Runnable {
     private char charToPrint;
+
 // The character to print
 
     private int times;
